@@ -1,0 +1,410 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-R.ttf);
+}
+
+@font-face {
+    font-family: Genos-divoc;
+    src: url(fonts/Genos-VariableFont_wght.ttf);
+}
+
+:root {
+    --dark-text-color: #FFEBD8;
+    --dark-highlight-color: #62C1A6;
+    --dark-secondary-highlight-color: #5253ff;
+    --dark-tertiary-highlight-color: #A74DB7;
+    --dark-main-bg-color: #030714;
+    --dark-secondary-bg-color: #241b2b;
+    --dark-colors-container-background: #333333;
+
+    --light-text-color: #0E0E0F;
+    --light-highlight-color: #5152E6;
+    --light-secondary-highlight-color: #57C0A2;
+    --light-tertiary-highlight-color: #9945C5;
+    --light-main-bg-color: #fff0e0;
+    --light-secondary-bg-color: #DED6E5;
+    --light-colors-container-background: #F5F5F5;
+}
+
+body {
+    --text-color: var(--dark-text-color);
+    --highlight-color: var(--dark-highlight-color);
+    --secondary-highlight-color: var(--dark-secondary-highlight-color);
+    --tertiary-highlight-color: var(--dark-tertiary-highlight-color);
+    --main-bg-color: var(--dark-main-bg-color);
+    --secondary-bg-color: var(--dark-secondary-bg-color);
+    --tertiary-bg-color: var(--dark-tertiary-bg-color);
+    --colors-container-background: var(--dark-colors-container-background);
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --text-color: var(--light-text-color);
+        --highlight-color: var(--light-highlight-color);
+        --secondary-highlight-color: var(--light-secondary-highlight-color);
+        --tertiary-highlight-color: var(--light-tertiary-highlight-color);
+        --main-bg-color: var(--light-main-bg-color);
+        --secondary-bg-color: var(--light-secondary-bg-color);
+        --tertiary-bg-color: var(--light-tertiary-bg-color);
+        --colors-container-background: var(--light-colors-container-background);
+    }
+}
+
+body.force-light {
+    --text-color: var(--light-text-color);
+    --highlight-color: var(--light-highlight-color);
+    --secondary-highlight-color: var(--light-secondary-highlight-color);
+    --main-bg-color: var(--light-main-bg-color);
+    --secondary-bg-color: var(--light-secondary-bg-color);
+    --tertiary-bg-color: var(--light-tertiary-bg-color);
+    --colors-container-background: var(--light-colors-container-background);
+}
+
+body.force-dark {
+    --text-color: var(--dark-text-color);
+    --highlight-color: var(--dark-highlight-color);
+    --secondary-highlight-color: var(--dark-secondary-highlight-color);
+    --main-bg-color: var(--dark-main-bg-color);
+    --secondary-bg-color: var(--dark-secondary-bg-color);
+    --tertiary-bg-color: var(--dark-tertiary-bg-color);
+    --colors-container-background: var(--dark-colors-container-background);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.3em;
+}
+
+section * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background-image: linear-gradient(#332a39, #020613);
+    font-family: Ubuntu, sans-serif;
+}
+
+/*
+h1, .mock-h1, {
+    color: var(--text-color);
+    font-family: Genos-divoc, sans-serif;
+    box-shadow: 0px -20px #62c1a6 inset;
+    display: inline-block;
+}
+*/
+
+h1, .mock-h1 {
+    color: var(--highlight-color);
+    font-family: Genos-divoc, sans-serif;
+    display: inline-block;
+    padding: 0px 35px;
+    font-size: 3.7rem;
+    margin: 0.75rem 0.75rem 0.75rem -1.5rem;
+    line-height: calc(100% - 20px);
+    font-weight: 600;
+    }
+
+h2, .mock-h2 {
+    color: var(--text-color);
+    font-family: Genos-divoc, sans-serif;
+    box-shadow: 0px -20px var(--secondary-highlight-color) inset;
+    display: inline-block;
+    padding: 0px 35px;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    margin: 0.75rem 0.75rem 0.75rem -0.25rem;
+    line-height: calc(100% - 10px);
+    font-weight: bold;
+}
+
+h3, h4, h5, .mock-h3, .mock-h4, .mock-h5 {
+    color: var(--tertiary-highlight-color) !important;
+}
+
+.mock-h1, .mock-h2, .mock-h3, .mock-h4, .mock-h5 {
+    display: inline-block;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    padding: 0;
+    margin: 0;
+}
+
+#banner-img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    margin: 0 100px 0 100px;
+    padding: 1rem;
+    min-width: 80%;
+}
+
+@media (max-width: 1000px) {
+    main {
+        margin: 0;
+    }
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+#vision-img, #logo-img {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+}
+
+p {
+    max-width: 80ch;
+}
+
+h3, .mock-h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0.5rem 1.5rem;
+}
+
+h4, .mock-h4 {
+    font-size: 1.25rem;
+    margin: 0.25rem 0 0.25rem 1.75rem;
+}
+
+h5, .mock-h5 {
+    font-size: 1.1rem;
+    margin: 0.1rem 0 0.1rem 2rem;
+}
+
+#logo-alt-container {
+    display: flex;
+}
+
+#logo-alt-first-container {
+    width: 75%;
+    max-width: 1200px;
+    padding-right: 2.5%;
+}
+
+#logo-alt-img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+}
+
+#logo-cw-img {
+    width: 22.5%;
+    max-width: 350px;
+    height: auto;
+}
+
+#colors-container {
+    max-width: 100%;
+    display: flex;
+    background-color: var(--colors-container-background)
+}
+
+#color-boxes {
+    width: 30%;
+    max-width: 470px;
+}
+
+.color-preview-img {
+    height: 48%;
+    width: auto;
+    margin: 1% 0 1% 2%;
+    display: block;
+}
+
+#color-lists {
+    width: 70%;
+}
+
+#color-lists h3 {
+    margin: 0.5rem;
+}
+
+#color-lists ul {
+    margin: 0.5rem;
+}
+
+blockquote {
+    background-color: var(--secondary-bg-color);
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+
+button {
+    font-size: 1.25rem;
+    background-color: var(--highlight-color);
+    color: var(--secondary-bg-color);
+    cursor: pointer;
+    border: 0px;
+    padding: 0.2rem 1em;
+}
+
+button:hover, button:focus, button:active {
+    text-decoration: underline;
+}
+
+a {
+    color: var(--highlight-color);
+}
+
+a:not(.ignore-visited):visited, a.always-visited {
+    color: var(--tertiary-highlight-color);
+}
+
+input {
+    font-size: 1rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--highlight-color);
+    border: 1px var(--highlight-color) solid;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+input, textarea {
+    background: var(--secondary-bg-color);
+    color: var(--text-color);
+    border: var(--highlight-color) 3px solid;
+    border-radius: 0px;
+    font-size: 130%;
+}
+input:focus, textarea:focus {
+    border-color: var(--secondary-highlight-color);
+    outline: none;
+}
+
+hr {
+    border: none;
+    margin-top: 60px;
+    position: relative;
+}
+
+hr::after {
+    content: ' ';
+    background: var(--secondary-highlight-color);
+    padding: 250px;
+    right: 0px;
+    position: absolute;
+    top: -30px;
+}
+
+.customization-fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.25rem;
+}
+
+.customization-fieldset input, .customization-fieldset label, .customization-fieldset span {
+    margin-bottom: 0.2rem;
+}
+
+.customization-fieldset input, .customization-fieldset span {
+    width: 20%;
+}
+
+.customization-fieldset label {
+    width: 40%;
+}
+
+.customization-fieldset input {
+    height: 1rem;
+    padding: 0;
+}
+
+.font-input, .font-input-label, .img-input, .img-input-label, #hr-img-input {
+    display: block;
+    margin-bottom: 0.25rem;
+    width: 95%;
+}
+
+#apply-customization-button {
+    margin: 1rem;
+}
+
+@media (max-device-width: 1360px) {
+
+    .customization-fieldset label {
+        width: 100%;
+    }
+
+    .customization-fieldset input, .customization-fieldset span {
+        width: 40%;
+    }
+}
+
+@media (max-device-width: 1000px) {
+    html {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    #vision-img, #logo-img {
+        width: 90%;
+    }
+
+    #logo-alt-container {
+        flex-direction: column;
+    }
+
+    #logo-alt-container * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo-alt-first-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #colors-container {
+        flex-direction: column;
+    }
+
+    #color-boxes, #color-lists {
+        width: 100%;
+        margin: 0;
+    }
+
+    .color-preview-img {
+        display: inline-block;
+    }
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+html {
+    /* Works around a bug in chromium that makes the site not full width in small preview sizes*/
+    position: absolute;
+}

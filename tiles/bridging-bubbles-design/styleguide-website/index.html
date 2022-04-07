@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Brdging Bubbles Design</title>
+    <meta charset="UTF-8"/>
+    <meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein Beispiel, wie ein Styleguide für eine Konferenz aussehen könnte."/>
+    <link rel="stylesheet" href="styleguide.css"/>
+</head>
+<body>
+<header>
+    <img id="banner-img" src="svg/banner.svg"
+         alt="Text: dieser Styleguide ist noch etwas WIP. Einige gelbe Streifen angelehnt das beliebte Cyber Klebeband"/>
+</header>
+<main>
+    <div>
+        <h1> Divoc - bridging bubbles - Styleguide </h1>
+    </div>
+    <!-- Lights on, reduce motion etc. -->
+    <section aria-labelledby="vision">
+        <div>
+          <h2 id="vision"> Gesellschaften in Blasen </h2>
+        </div>
+        <img src="img/bridging-bubbles-cityscape.jpg" id="vision-img"
+             alt="Eine Card10 schwebt in einer orangenen Seifenblase umgeben von Rauch auf einem leuchtenden Plateu. Auf dem Display ein text: Divoc - バブルス ブリッジ. Im Hintergrund ist eine grün schimmernde futuristische Stadt von Oben zu sehen. Ganz weit entfernt hinter einer Häusershlucht umgibt eine riesige blaue Seifenblase mit eine fliegende Untertasse. Die Antenne sieht etwas aus, wie der Berliner Fernsehturm."/>
+        <p>
+            Das Divoc Design nimmt soziale Blasen wörtlich. Nicht nur leben wir als Wesen in einer Blase, wir befinden uns in gigantischen Gesellschaften, die Blasen Bilden. </p>
+        <p>
+            Das Design des DiVOC orientiert sich daher an visuell an Retro-Scifi-Anime. Ein paar Cyberpunk Einflüsse sind auch gern gesehen. Aber vielleicht ist diese Assoziation, die wir da haben auch nur ein Zeichen der Blase, in der wir leben und eure erste Assoziation ist Fantasy? </p>
+        <p>
+            Wenn ihr mit euren eigenen Designs contributen möcht stellt euch die Fragen: Was macht die soziale Blase aus, in der ihr euch befindet und wir könnt ihr eure Gesellschaft umgeben von einer Blase repräsentieren?
+        </p>
+        <p>
+          Diesen Styleguide und alle Grafik Assets, die bis zum Event erstellt werden, findet ihr im <a href="https://git.cccv.de/divoc/bridging-bubbles-design"> Bridging Bubbles Design Repository im CCCV-Git.</a>
+        <hr/>
+    </section>
+    <section aria-labelledby="logo">
+        <div>
+            <h2 id="logo">das Logo</h2>
+        </div>
+        <img src="svg/logo.svg" id="logo-img"
+             alt="Logo vor Hintergund. Ein grünes Kaninchen fliegt ein Seifenblasen-Ufo. Titel: DiVOC Untertitel: バブルス ブリッジ. Im Hintergrund sind ganz viele verschiedene bunte Kreaturen im gleichen Stil in Blasen: Otter, Aliens, Haie und Winkekätzchen "/>
+        <p>
+            Das DiVOC Bunny macht sich auch dieses mal wider zu euch in's Wohnzimmer auf und bekommt diesmal jedoch Gesellschaft: Kreiert euch im <a href="https://bb3.tils.pw">Logogenerator von Tilcreator</a> eine Kreatur für eure Profilbilder und Projekte.
+        </p>
+        <div>
+            <h3>mögliche Adaptionen</h3>
+        </div>
+        <div id="logo-alt-container">
+            <div id="logo-alt-first-container">
+                <p>Es fehlt noch eine Kreatur? Baut euch ein ganz eigenes Logo aus den Vorlagen im Gitlab. Neben aufgeräumten SVGs, die sich gut fürs Plotten eignen, gibt es da auch die Rohversionen zum hacken.</p>
+                <p>Oder noch viel besser: adaptiert euer eigenes Logo und nimmt dafür inspiration von unserem Design.</p>
+            </div>
+        </div>
+        <hr/>
+    </section>
+    <section aria-labelledby="color-scheme">
+        <div>
+            <h2 id="color-scheme">das Farbschema</h2>
+        </div>
+        <p>
+          Das Farbschema basiert auf 5 Basisfarben - die je in einer "light" und einer "dark" Variante existieren und 5 dazugehörigen dunklen Gradienten. </p>
+        <p>
+          Dabei sollte in den meisten Kontexten das dunkle Farbschema genutzt werden. Wenn sich Nutzende über eine CSS-Flag ein helles Theme wünschen oder der Kontext das erfordert, kann auch das Light theme verwendet werden. Die Grundfarben sind so abgestimmt, dass sie leicht verschiedene HEX-Werte haben, jedoch vor dem Untergrund visuell gleich aussehen.
+        </p>
+
+        <div class="sr-only">
+          <a href="#Themes-ableiten"> Lange Farbschema-Beschreibungen überspringen. </a>
+        </div>
+
+        <svg role="img" aria-label="Ein dunkles Farbschema - base. Die beige Überschrift ist blau unterstrichen vor fast schwarzem Untergrund, ein Beispiel-fließtext steht auf dunkelgrau. 6 mit hex-werten Beschriftete Kästchen zeigen beige, grün, blau, violett, rose und ocker. "
+           height="280"
+           width="400"
+           viewBox="0 0 52.916665 37.041664"
+           version="1.1"
+           id="svg160177"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs160174">
+            <linearGradient
+               id="media-dark">
+              <stop
+                 style="stop-color:#020613;stop-opacity:1"
+                 offset="0"
+                 id="stop305514" />
+              <stop
+                 style="stop-color:#332a39;stop-opacity:1"
+                 offset="1"
+                 id="stop305516" />
+            </linearGradient>
+            <linearGradient
+               xlink:href="#media-dark"
+               id="linearGradient1326"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(0.62788367,0,0,0.20637033,-837.9087,-92.998094)"
+               x1="1274.2083"
+               y1="270.42169"
+               x2="1274.2083"
+               y2="449.97531" />
+          </defs>
+          <g
+             id="layer1">
+            <rect
+               style="fill:url(#linearGradient1326);fill-opacity:1;stroke-width:0.956621;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect1324"
+               width="52.916668"
+               height="37.041668"
+               x="-52.916668"
+               y="-37.041668"
+               transform="scale(-1)" />
+            <rect
+               style="fill:#030714;fill-opacity:1;stroke-width:1.08854;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect505567-3"
+               width="27.771074"
+               height="37.041664"
+               x="0"
+               y="9.5367432e-07" />
+            <rect
+               style="fill:#a74bd7;fill-opacity:1;stroke:none;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect505569-6"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203495"
+               y="19.261578" />
+            <rect
+               style="fill:#62c1a6;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect505571-7"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203495"
+               y="7.3229952" />
+            <rect
+               style="fill:#5253ff;fill-opacity:1;stroke:none;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect505573-5"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203495"
+               y="13.292264" />
+            <rect
+               style="fill:#fdbe4b;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect505575-3"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203495"
+               y="31.2001" />
+            <rect
+               style="fill:#ffebd8;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect505577-5"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203495"
+               y="1.3536959" />
+            <rect
+               style="fill:#ea5177;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect505579-6"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203495"
+               y="25.230831" />
+            <rect
+               style="fill:#5253ff;fill-opacity:1;stroke-width:0.854237;stop-color:#000000"
+               id="rect139449"
+               width="21.419888"
+               height="2.6959896"
+               x="0"
+               y="4.6506395" />
+            <text
+               xml:space="preserve"
+               style="font-size:8.92015px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:Nunito;fill:#ffebd8;fill-opacity:1;stroke-width:0.465437"
+               x="1.0047455"
+               y="5.9186983"
+               id="text505583"><tspan
+                 id="tspan505581"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Genos;-inkscape-font-specification:'Genos Bold';fill:#ffebd8;fill-opacity:1;stroke-width:0.465437"
+                 x="1.0047455"
+                 y="5.9186983">base</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898914"
+               y="5.2289858"
+               id="text760289-2"><tspan
+                 id="tspan760287-9"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898914"
+                 y="5.2289858">#FFEBD8</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898914"
+               y="29.106121"
+               id="text776588-1"><tspan
+                 id="tspan776586-2"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898914"
+                 y="29.106121">#EA5177</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898914"
+               y="35.075394"
+               id="text776594-7"><tspan
+                 id="tspan776592-0"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898914"
+                 y="35.075394">#FDBE4B</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898914"
+               y="11.198285"
+               id="text776600-9"><tspan
+                 id="tspan776598-3"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898914"
+                 y="11.198285">#62C1A6</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898899"
+               y="17.167553"
+               id="text776606-6"><tspan
+                 id="tspan776604-0"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898899"
+                 y="17.167553">#5253FF</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898899"
+               y="23.136864"
+               id="text776612-6"><tspan
+                 id="tspan776610-2"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898899"
+                 y="23.136864">#A74DB7</tspan></text>
+            <rect
+               style="fill:#241b2b;fill-opacity:1;stroke-width:0.804465;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect1513"
+               width="22.842838"
+               height="24.595718"
+               x="0"
+               y="12.445947" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.96591px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;white-space:pre;inline-size:72.6149;fill:#ffebd8;fill-opacity:1;stroke-width:0.552217"
+               x="1294.8667"
+               y="533.25824"
+               id="text505587"
+               transform="matrix(0.30350091,0,0,0.27302238,-392.31391,-133.47593)"><tspan
+                 x="1294.8667"
+                 y="533.25824"
+                 id="tspan974">
+        </tspan><tspan
+                 x="1294.8667"
+                 y="543.21562"
+                 id="tspan976">Impedit eos </tspan><tspan
+                 x="1294.8667"
+                 y="553.17302"
+                 id="tspan978">voluptatem iure qui </tspan><tspan
+                 x="1294.8667"
+                 y="563.13042"
+                 id="tspan980">quae. Voluptatem </tspan><tspan
+                 x="1294.8667"
+                 y="573.08782"
+                 id="tspan982">incidunt et aut iste </tspan><tspan
+                 x="1294.8667"
+                 y="583.04521"
+                 id="tspan984">sapiente odit. Eius </tspan><tspan
+                 x="1294.8667"
+                 y="593.00261"
+                 id="tspan986">repellat quasi ut </tspan><tspan
+                 x="1294.8667"
+                 y="602.96001"
+                 id="tspan988">mollitia eum..
+        </tspan><tspan
+                 x="1294.8667"
+                 y="612.91741"
+                 id="tspan990">
+        </tspan><tspan
+                 x="1294.8667"
+                 y="622.8748"
+                 id="tspan992">
+        </tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffebd8;fill-opacity:1;stroke-width:0.0693104"
+               x="11.987244"
+               y="36.20343"
+               id="text829466"><tspan
+                 id="tspan829464"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffebd8;fill-opacity:1;stroke-width:0.0693104"
+                 x="11.987244"
+                 y="36.20343">#241B2B</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffebd8;fill-opacity:1;stroke-width:0.0693104"
+               x="11.987244"
+               y="11.793408"
+               id="text6490"><tspan
+                 id="tspan6488"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffebd8;fill-opacity:1;stroke-width:0.0693104"
+                 x="11.987244"
+                 y="11.793408">#030714</tspan></text>
+          </g>
+        </svg>
+
+        <svg  role="img" aria-label="Ein helles Farbschema - base. Die schwarze Überschrift ist grün unterstrichen vor fast beigem Untergrund, ein Beispiel-fließtext steht auf hellgrau. 6 mit hex-werten Beschriftete Kästchen zeigen schwarz, grün, blau, violett, rose und ocker. "
+           height="280"
+           viewBox="0 0 52.916665 37.041664"
+           version="1.1"
+           id="svg160177"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs160174">
+            <linearGradient
+               xlink:href="#linearGradient304514"
+               id="linearGradient18286"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(0.62788367,0,0,0.20637031,-837.90869,-55.956421)"
+               x1="1274.2083"
+               y1="270.42169"
+               x2="1274.2083"
+               y2="449.97531" />
+            <linearGradient
+               id="linearGradient304514">
+              <stop
+                 style="stop-color:#fff0e0;stop-opacity:1;"
+                 offset="0"
+                 id="stop304510" />
+              <stop
+                 style="stop-color:#d0c8c3;stop-opacity:1;"
+                 offset="1"
+                 id="stop304512" />
+            </linearGradient>
+          </defs>
+          <g
+             id="layer1">
+            <rect
+               style="fill:url(#linearGradient18286);fill-opacity:1;stroke-width:0.956621;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect18212"
+               width="52.916668"
+               height="37.041664"
+               x="-52.916668"
+               y="0"
+               transform="scale(-1,1)" />
+            <rect
+               style="fill:#fceede;fill-opacity:1;stroke-width:1.08854;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect18214"
+               width="27.771074"
+               height="37.04166"
+               x="-1.2715658e-06"
+               y="0" />
+            <rect
+               style="fill:#57c0a2;fill-opacity:1;stroke-width:0.823885;stop-color:#000000"
+               id="rect135667"
+               width="19.924774"
+               height="2.6959896"
+               x="-1.2715658e-06"
+               y="4.6506386" />
+            <text
+               xml:space="preserve"
+               style="font-size:8.92015px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:Nunito;fill:#0e0e0f;fill-opacity:1;stroke-width:0.465437"
+               x="1.0047594"
+               y="5.9186974"
+               id="text18230"><tspan
+                 id="tspan18228"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Genos;-inkscape-font-specification:'Genos Bold';fill:#0e0e0f;fill-opacity:1;stroke-width:0.465437"
+                 x="1.0047594"
+                 y="5.9186974">light</tspan></text>
+            <rect
+               style="fill:#ded6e5;fill-opacity:1;stroke-width:0.805852;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect18256"
+               width="22.921667"
+               height="24.595716"
+               x="-1.2715658e-06"
+               y="12.445946" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.96591px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;white-space:pre;inline-size:72.6149;fill:#0e0e0f;fill-opacity:1;stroke-width:0.552217"
+               x="1294.8667"
+               y="533.25824"
+               id="text18276"
+               transform="matrix(0.30350091,0,0,0.27302238,-392.31391,-133.47593)"><tspan
+                 x="1294.8667"
+                 y="533.25824"
+                 id="tspan1087">
+        </tspan><tspan
+                 x="1294.8667"
+                 y="543.21562"
+                 id="tspan1089">Impedit eos </tspan><tspan
+                 x="1294.8667"
+                 y="553.17302"
+                 id="tspan1091">voluptatem iure qui </tspan><tspan
+                 x="1294.8667"
+                 y="563.13042"
+                 id="tspan1093">quae. Voluptatem </tspan><tspan
+                 x="1294.8667"
+                 y="573.08782"
+                 id="tspan1095">incidunt et aut iste </tspan><tspan
+                 x="1294.8667"
+                 y="583.04521"
+                 id="tspan1097">sapiente odit. Eius </tspan><tspan
+                 x="1294.8667"
+                 y="593.00261"
+                 id="tspan1099">repellat quasi ut </tspan><tspan
+                 x="1294.8667"
+                 y="602.96001"
+                 id="tspan1101">mollitia eum..
+        </tspan><tspan
+                 x="1294.8667"
+                 y="612.91741"
+                 id="tspan1103">
+        </tspan><tspan
+                 x="1294.8667"
+                 y="622.8748"
+                 id="tspan1105">
+        </tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#0e0e0f;fill-opacity:1;stroke-width:0.0693104"
+               x="11.987243"
+               y="36.367378"
+               id="text18280"><tspan
+                 id="tspan18278"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#0e0e0f;fill-opacity:1;stroke-width:0.0693104"
+                 x="11.987243"
+                 y="36.367378">#DED6E5</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#0e0e0f;fill-opacity:1;stroke-width:0.0693104"
+               x="11.987243"
+               y="11.793407"
+               id="text18284"><tspan
+                 id="tspan18282"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#0e0e0f;fill-opacity:1;stroke-width:0.0693104"
+                 x="11.987243"
+                 y="11.793407">#FCEEDE</tspan></text>
+            <rect
+               style="fill:#9945c5;fill-opacity:1;stroke:none;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect493419"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203499"
+               y="19.261578" />
+            <rect
+               style="fill:#57c0a2;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect493421"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203499"
+               y="13.292264" />
+            <rect
+               style="fill:#5152e6;fill-opacity:1;stroke:none;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect493423"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203499"
+               y="7.3229957" />
+            <rect
+               style="fill:#f6b237;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect493425"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203499"
+               y="31.2001" />
+            <rect
+               style="fill:#0e0e0f;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect493427"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203506"
+               y="1.3536961" />
+            <rect
+               style="fill:#ea4a72;fill-opacity:1;stroke-width:1.68745;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect493429"
+               width="16.425486"
+               height="4.5705571"
+               x="35.203499"
+               y="25.230831" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffebd8;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898903"
+               y="5.2289863"
+               id="text803503"><tspan
+                 id="tspan803501"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffebd8;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898903"
+                 y="5.2289863">#0E0E0F</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898903"
+               y="29.106121"
+               id="text803507"><tspan
+                 id="tspan803505"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898903"
+                 y="29.106121">#EA4A72</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898903"
+               y="35.07539"
+               id="text803511"><tspan
+                 id="tspan803509"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898903"
+                 y="35.07539">#F6B237</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898903"
+               y="17.167553"
+               id="text803515"><tspan
+                 id="tspan803513"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898903"
+                 y="17.167553">#57C0A2</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898903"
+               y="11.198286"
+               id="text803519"><tspan
+                 id="tspan803517"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898903"
+                 y="11.198286">#5152E6</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+               x="35.898903"
+               y="23.136871"
+               id="text803523"><tspan
+                 id="tspan803521"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#241b2b;fill-opacity:1;stroke-width:0.0693104"
+                 x="35.898903"
+                 y="23.136871">#9945C5</tspan></text>
+          </g>
+        </svg>
+        <svg  role="img" aria-label="Übersichtsgrafiken mit dunklen Farbverläufen passend zu den bisher genannten Farben."
+           height="280"
+           viewBox="0 0 52.916665 37.041664"
+           version="1.1"
+           id="svg160177"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs160174">
+            <linearGradient
+               xlink:href="#media-dark"
+               id="linearGradient35176"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(0.62788129,0,0,0.20637033,-837.90571,-92.998093)"
+               x1="1274.2083"
+               y1="270.42169"
+               x2="1274.2083"
+               y2="449.97531" />
+            <linearGradient
+               id="media-dark">
+              <stop
+                 style="stop-color:#020613;stop-opacity:1"
+                 offset="0"
+                 id="stop305514" />
+              <stop
+                 style="stop-color:#332a39;stop-opacity:1"
+                 offset="1"
+                 id="stop305516" />
+            </linearGradient>
+            <linearGradient
+               xlink:href="#media-dark"
+               id="linearGradient40832"
+               x1="-92.328003"
+               y1="54.340496"
+               x2="-54.779396"
+               y2="54.340496"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(1.057606,0,0,1,104.24502,-32.79364)" />
+            <linearGradient
+               xlink:href="#linearGradient6418"
+               id="linearGradient40816"
+               x1="-92.328003"
+               y1="42.401913"
+               x2="-54.779396"
+               y2="42.401913"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(1.057606,0,0,1,104.24502,-32.79364)" />
+            <linearGradient
+               id="linearGradient6418">
+              <stop
+                 style="stop-color:#223a33;stop-opacity:1"
+                 offset="0"
+                 id="stop6414" />
+              <stop
+                 style="stop-color:#0a161f;stop-opacity:1"
+                 offset="1"
+                 id="stop6416" />
+            </linearGradient>
+            <linearGradient
+               xlink:href="#linearGradient4191"
+               id="linearGradient40824"
+               x1="-92.328003"
+               y1="48.371181"
+               x2="-54.779396"
+               y2="48.371181"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(1.057606,0,0,1,104.24502,-32.79364)" />
+            <linearGradient
+               id="linearGradient4191">
+              <stop
+                 style="stop-color:#0a2b34;stop-opacity:1"
+                 offset="0"
+                 id="stop4187" />
+              <stop
+                 style="stop-color:#0d0313;stop-opacity:1"
+                 offset="1"
+                 id="stop4189" />
+            </linearGradient>
+            <linearGradient
+               xlink:href="#linearGradient6897"
+               id="linearGradient40848"
+               x1="-92.328003"
+               y1="66.279022"
+               x2="-54.779396"
+               y2="66.279022"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(1.057606,0,0,1,104.24502,-32.79364)" />
+            <linearGradient
+               id="linearGradient6897">
+              <stop
+                 style="stop-color:#323325;stop-opacity:1"
+                 offset="0"
+                 id="stop6893" />
+              <stop
+                 style="stop-color:#06120d;stop-opacity:1"
+                 offset="1"
+                 id="stop6895" />
+            </linearGradient>
+            <linearGradient
+               xlink:href="#linearGradient197559"
+               id="linearGradient40840"
+               x1="-92.328003"
+               y1="60.30975"
+               x2="-54.779396"
+               y2="60.30975"
+               gradientUnits="userSpaceOnUse"
+               gradientTransform="matrix(1.057606,0,0,1,104.24502,-32.79364)" />
+            <linearGradient
+               id="linearGradient197559">
+              <stop
+                 style="stop-color:#3a1b35;stop-opacity:1"
+                 offset="0"
+                 id="stop197555" />
+              <stop
+                 style="stop-color:#0b0321;stop-opacity:1"
+                 offset="1"
+                 id="stop197557" />
+            </linearGradient>
+          </defs>
+          <g
+             id="layer1">
+            <rect
+               style="fill:url(#linearGradient35176);fill-opacity:1;stroke-width:0.956619;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect35102"
+               width="52.916668"
+               height="37.041668"
+               x="-52.916668"
+               y="-37.041668"
+               transform="scale(-1)" />
+            <rect
+               style="fill:#a74bd7;fill-opacity:1;stroke:none;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect35106"
+               width="5.1675649"
+               height="4.5705571"
+               x="1.4308134"
+               y="19.261576" />
+            <rect
+               style="fill:#62c1a6;fill-opacity:1;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect35108"
+               width="5.1675649"
+               height="4.5705571"
+               x="1.4308134"
+               y="7.3229942" />
+            <rect
+               style="fill:#5253ff;fill-opacity:1;stroke:none;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect35110"
+               width="5.1675649"
+               height="4.5705571"
+               x="1.4308134"
+               y="13.292262" />
+            <rect
+               style="fill:#fdbe4b;fill-opacity:1;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect35112"
+               width="5.1675649"
+               height="4.5705571"
+               x="1.4308134"
+               y="31.2001" />
+            <rect
+               style="fill:#ea5177;fill-opacity:1;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect35116"
+               width="5.1675649"
+               height="4.5705571"
+               x="1.4308134"
+               y="25.230829" />
+            <text
+               xml:space="preserve"
+               style="font-size:8.92015px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:Nunito;fill:#ffebd8;fill-opacity:1;stroke-width:0.465437"
+               x="1.0049254"
+               y="5.9186974"
+               id="text35120"><tspan
+                 id="tspan35118"
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Genos;-inkscape-font-specification:'Genos Bold';fill:#ffebd8;fill-opacity:1;stroke-width:0.465437"
+                 x="1.0049254"
+                 y="5.9186974">gradients</tspan></text>
+            <rect
+               style="fill:#241b2b;fill-opacity:1;stroke:none;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect40790"
+               width="5.1675649"
+               height="4.5705571"
+               x="46.310005"
+               y="19.261576" />
+            <rect
+               style="fill:#162829;fill-opacity:1;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect40792"
+               width="5.1675649"
+               height="4.5705571"
+               x="46.310005"
+               y="7.3229942" />
+            <rect
+               style="fill:#0d1727;fill-opacity:1;stroke:none;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect40794"
+               width="5.1675649"
+               height="4.5705571"
+               x="46.310005"
+               y="13.292262" />
+            <rect
+               style="fill:#1c2219;fill-opacity:1;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect40796"
+               width="5.1675649"
+               height="4.5705571"
+               x="46.310005"
+               y="31.2001" />
+            <rect
+               style="fill:#230f2b;fill-opacity:1;stroke-width:0.946487;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect40798"
+               width="5.1675649"
+               height="4.5705571"
+               x="46.310005"
+               y="25.230829" />
+            <rect
+               style="fill:url(#linearGradient40832);fill-opacity:1;stroke:none;stroke-width:2.6238;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect40800"
+               width="39.711632"
+               height="4.5705571"
+               x="6.5983739"
+               y="19.261576" />
+            <rect
+               style="fill:url(#linearGradient40816);fill-opacity:1;stroke-width:2.6238;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect40802"
+               width="39.711632"
+               height="4.5705571"
+               x="6.5983739"
+               y="7.3229942" />
+            <rect
+               style="fill:url(#linearGradient40824);fill-opacity:1;stroke:none;stroke-width:2.6238;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851;stroke-opacity:1"
+               id="rect40804"
+               width="39.711632"
+               height="4.5705571"
+               x="6.5983739"
+               y="13.292262" />
+            <rect
+               style="fill:url(#linearGradient40848);fill-opacity:1;stroke-width:2.6238;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect40806"
+               width="39.711632"
+               height="4.5705571"
+               x="6.5983739"
+               y="31.2001" />
+            <rect
+               style="fill:url(#linearGradient40840);fill-opacity:1;stroke-width:2.6238;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:3.96851"
+               id="rect40808"
+               width="39.711632"
+               height="4.5705571"
+               x="6.5983739"
+               y="25.230829" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#62c1a6;fill-opacity:1;stroke-width:0.0693104"
+               x="7.0843053"
+               y="11.198284"
+               id="text77327"><tspan
+                 id="tspan77325"
+                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#62c1a6;fill-opacity:1;stroke-width:0.0693104"
+                 x="7.0843053"
+                 y="11.198284">green</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#5253ff;fill-opacity:1;stroke-width:0.0693104"
+               x="7.0843053"
+               y="17.198198"
+               id="text78321"><tspan
+                 id="tspan78319"
+                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#5253ff;fill-opacity:1;stroke-width:0.0693104"
+                 x="7.0843053"
+                 y="17.198198">blue</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#a74bd7;fill-opacity:1;stroke-width:0.0693104"
+               x="7.0843053"
+               y="23.106981"
+               id="text78325"><tspan
+                 id="tspan78323"
+                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#a74bd7;fill-opacity:1;stroke-width:0.0693104"
+                 x="7.0843053"
+                 y="23.106981">main <tspan
+           style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light Italic';fill:#a74bd7;fill-opacity:1"
+           id="tspan82689">inverted</tspan></tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#ea5177;fill-opacity:1;stroke-width:0.0693104"
+               x="7.0843053"
+               y="29.038954"
+               id="text78329"><tspan
+                 id="tspan78327"
+                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#ea5177;fill-opacity:1;stroke-width:0.0693104"
+                 x="7.0843053"
+                 y="29.038954">purple</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.77241px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#fdbe4b;fill-opacity:1;stroke-width:0.0693104"
+               x="7.0843053"
+               y="35.197639"
+               id="text78333"><tspan
+                 id="tspan78331"
+                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Semi-Bold';fill:#fdbe4b;fill-opacity:1;stroke-width:0.0693104"
+                 x="7.0843053"
+                 y="35.197639">yellow</tspan></text>
+          </g>
+        </svg>
+        <p>
+          Die Textfarbe ist dabei immer ein Beige. Bzw ein sehr sehr dunkles grau.
+        </p>
+          <h3 id="Themes-ableiten"> Themes ableiten </h3>
+        <p>
+          Aus den den Grundfarben lassen sich nun Themes ableiten. Jedes Theme benötigt:
+        </p>
+            <ul lang="de">
+                <li> Eine Primärfarbe (starker Kontrast zum Untergrund bevorzugt) </li>
+                <li> Eine Sekundärfarbe (starker Kontrast zur Textfarbe bevorzugt) </li>
+                <li> Eine tertiäre Farbe </li>
+                <li>
+                  Einen Farbgradienten
+                  <ul lang="de">
+                    <li> daraus abgeleitet die dunkelste Farbe als primäre Hintergrundfarbe </li>
+                    <li> eine Farbe aus dem Gradienten (siehe vorgeschlagene Auswahl) als sekundäre Hintergrundfarbe. </li>
+                </li>
+            </ul>
+        <p> Für abgeleitete Light Themes ist nur ein Gradient vorgesehen. </p>
+        <hr/>
+    </section>
+    <section aria-labelledby="text-demo">
+        <div>
+            <h2 id="text-demo">Text-Demo</h2>
+        </div>
+        <div>
+            <span class="mock-h1">Überschrift 1</span>
+        </div>
+        <div>
+            <span class="mock-h2">Überschrift 2</span>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <span class="mock-h3">Überschrift 3</span>
+        <blockquote cite="https://archive.org/details/definibusbonoru02cicegoog">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </blockquote>
+        <ul lang="en">
+            <li>Hello!</li>
+            <li>Hey!</li>
+            <li lang="de">Listen!</li>
+            <li>Look!</li>
+            <li>Watch out!</li>
+        </ul>
+        <hr/>
+    </section>
+    <section aria-labelledby="ui-components">
+        <div>
+            <h2 id="ui-components">UI-Elemente</h2>
+        </div>
+        <div id="ui-components-container">
+            <button>Button</button>
+            <a href="#ui-components" class="ignore-visited">Link</a>
+            <a href="#ui-components" class="always-visited">Link (besucht)</a>
+            <br/>
+            <br/>
+            <label for="text-input-example">Eingabefeld:</label>
+            <input type="text" id="text-input-example"/>
+        </div>
+    </section>
+    <section aria-labelledby="pixelwelt">
+        <div>
+            <h2 id="pixelwelt">Pixelwelt</h2>
+        </div>
+        <p>
+          Das Divoc setzt für die Pixelwelt auf einen 16x16 Stil und reduzierte Farbpaletten. Zwar unterstützt das Workadventure nur 32x32 Tiles, wir können jedoch jeden Pixel "4 Pixel groß" machen und so eine besondere Optik erzielen.
+        </p>
+        <div><img src="img/Pixel-cityscapes.png" class="pixelated" height="300"
+             alt="Pixelgrafik, ein grünes Häschen in Bläschen fliegt in richtung einer Stadt in einer gelben blase. Im Hintergrund ist eine Raumstation in einer blauen blase und ein kleines rotes Raaumschiff."/>
+        </div>
+        <p>
+          Unsere <a href="https://git.cccv.de/divoc/bridging-bubbles-design/-/tree/main/pixels"> Pixel-Asssets im Design-Git </a> können euch dabei helfen, im Event-Stil zu pixeln. Wir empfehlen hier insbesondere die Farbpalette, die ihr in Aseprite nutzen könnt. (Die Anwendung kann gekauft werden, Freund_innen des selbst-kompilierens finden die Anwendung jedoch auch frei im Paketmanager des Vertrauens.)
+    </section>
+</main>
+</body>
+</html>
