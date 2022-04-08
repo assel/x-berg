@@ -268,6 +268,12 @@
          "imagewidth":288,
          "margin":0,
          "name":"mapUtilities",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"mapUtilities: CC0"
+                }],
          "spacing":0,
          "tilecount":9,
          "tileheight":32,
@@ -279,11 +285,6 @@
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }, 
-                        {
-                         "name":"tilesetCopyright",
-                         "type":"string",
-                         "value":"mapUtilities: CC0"
                         }]
                 }],
          "tilewidth":32
@@ -319,7 +320,7 @@
                 {
                  "name":"tilesetCopyright",
                  "type":"string",
-                 "value":"by enterbrain and flaming teddy productions (https:\/\/flamingteddyproductions.tumblr.com\/post\/99352112404\/a-modern-living-room-tileset-with-some-desks-added)"
+                 "value":"flamingteddy_furniture: by enterbrain and flaming teddy productions (https:\/\/flamingteddyproductions.tumblr.com\/post\/99352112404\/a-modern-living-room-tileset-with-some-desks-added)"
                 }],
          "spacing":0,
          "tilecount":256,
