@@ -253,7 +253,7 @@
                 {
                  "name":"tilesetCopyright",
                  "type":"string",
-                 "value":"CC0"
+                 "value":"floortileset_divoc22: CC0"
                 }],
          "spacing":0,
          "tilecount":256,
@@ -283,7 +283,7 @@
                         {
                          "name":"tilesetCopyright",
                          "type":"string",
-                         "value":"CC0"
+                         "value":"mapUtilities: CC0"
                         }]
                 }],
          "tilewidth":32
@@ -300,7 +300,7 @@
                 {
                  "name":"tilesetCopyright",
                  "type":"string",
-                 "value":"CC-BY 4.0 - betalars(artstation.com\/betalars) und evlii - https:\/\/git.cccv.de\/divoc\/bridging-bubbles-design"
+                 "value":"DiVOC-bridging_bubbles-32x32: CC-BY 4.0 - betalars(artstation.com\/betalars) und evlii - https:\/\/git.cccv.de\/divoc\/bridging-bubbles-design"
                 }],
          "spacing":0,
          "tilecount":1,
