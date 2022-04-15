@@ -81,7 +81,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/cdn.c3voc.de\/hls\/csh\/native_hd.m3u8?autoplay=1"
+                 "value":"https:\/\/streaming.media.ccc.de\/divoc\/embed\/bb3\/hls\/native"
                 }, 
                 {
                  "name":"openWebsitePolicy",
